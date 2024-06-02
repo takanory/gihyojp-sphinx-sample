@@ -23,6 +23,13 @@ language = 'ja'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'bizstyle'
+html_theme = 'furo'
 html_static_path = ['_static']
 html_logo = "_static/logo.png"
+
+# https://pradyunsg.me/furo/customisation/top-of-page-buttons/
+html_theme_options = {
+    "source_repository": "https://github.com/takanory/gihyojp-sphinx-sample/",
+    "source_branch": "main",
+    "source_directory": "source",
+}
