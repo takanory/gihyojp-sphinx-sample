@@ -1,0 +1,18 @@
+# 必須
+version: 2
+
+# OSとPythonバージョンを設定する
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+
+# source/ ディレクトリ以下のドキュメントをビルドする
+sphinx:
+  configuration: source/conf.py
+
+# requirements.txtのパッケージをインストールする
+python:
+  install:
+    - requirements: requirements.txt
+
