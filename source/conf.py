@@ -17,6 +17,7 @@ extensions = [
     "myst_parser",
     "sphinx.ext.todo",
     "sphinx_copybutton",
+    "sphinx_design",
 ]
 
 templates_path = ['_templates']
@@ -40,3 +41,8 @@ html_theme_options = {
 
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
 todo_include_todos = True
+
+# https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+]

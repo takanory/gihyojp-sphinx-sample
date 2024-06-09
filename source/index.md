@@ -8,6 +8,7 @@ Markdownで書いてます。
 ```{toctree}
 sphinx_ext_todo
 sphinx_copybutton
+sphinx_design
 ```
 
 ## TODOリスト
