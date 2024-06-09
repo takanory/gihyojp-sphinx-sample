@@ -13,7 +13,10 @@ author = 'takanory'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser"]
+extensions = [
+    "myst_parser",
+    "sphinx.ext.todo",
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -33,3 +36,6 @@ html_theme_options = {
     "source_branch": "main",
     "source_directory": "source",
 }
+
+# https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
+todo_include_todos = True
