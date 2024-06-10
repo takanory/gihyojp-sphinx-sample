@@ -52,7 +52,7 @@ html_css_files = [
 
 # https://sphinxext-opengraph.readthedocs.io/en/latest/
 # サイトURLとデフォルト画像を設定
-ogp_site_url = "https://gihyojp-sphinx-sample.readthedocs.io/"
+ogp_site_url = "https://gihyojp-sphinx-sample.readthedocs.io/ja/latest"
 # ogp_image = "https://gihyojp-sphinx-sample.readthedocs.io/ja/latest/_static/logo.png"
 
 # https://sphinxext-opengraph.readthedocs.io/en/latest/socialcards.html
