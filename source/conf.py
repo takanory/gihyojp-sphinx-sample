@@ -3,6 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import sys
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -18,6 +20,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx_copybutton",
     "sphinx_design",
+    "sphinxext.opengraph",
 ]
 
 templates_path = ['_templates']
@@ -46,3 +49,21 @@ todo_include_todos = True
 html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 ]
+
+# https://sphinxext-opengraph.readthedocs.io/en/latest/
+# サイトURLとデフォルト画像を設定
+ogp_site_url = "https://gihyojp-sphinx-sample.readthedocs.io/"
+# ogp_image = "https://gihyojp-sphinx-sample.readthedocs.io/ja/latest/_static/logo.png"
+
+# https://sphinxext-opengraph.readthedocs.io/en/latest/socialcards.html
+ogp_social_cards = {
+    "enable": True,
+    "image": "_static/logo.png",
+    "font": "Noto Sans CJK JP",
+}
+
+# macOSとWindows用のフォント設定
+if sys.platform == "darwin":
+    ogp_social_cards["font"] = "Hiragino Maru Gothic Pro"
+elif sys.platform == "win32":
+    ogp_social_cards["font"] = "MS Gothic"
