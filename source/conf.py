@@ -22,6 +22,7 @@ extensions = [
     "sphinx_design",
     "sphinxext.opengraph",
     "sphinx_comments",
+    "sphinx_revealjs",
 ]
 
 templates_path = ['_templates']
