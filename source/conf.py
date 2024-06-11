@@ -21,6 +21,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinxext.opengraph",
+    "sphinx_comments",
 ]
 
 templates_path = ['_templates']
@@ -67,3 +68,10 @@ if sys.platform == "darwin":
     ogp_social_cards["font"] = "Hiragino Maru Gothic Pro"
 elif sys.platform == "win32":
     ogp_social_cards["font"] = "MS Gothic"
+
+# https://sphinx-comments.readthedocs.io/en/latest/hypothesis.html
+# コメントをHypotesisでする
+comments_config = {
+   "hypothesis": True
+}
+    
